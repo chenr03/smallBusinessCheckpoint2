@@ -7,24 +7,23 @@ import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
-        <AppBar position="relative">
+        <AppBar position="relative" style={{ background: 'green' }}>
             <Toolbar>
                 <IconButton color="inherit">
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    FakeCars.com
+                    AfftonBusiness.com
                 </Typography>
                 <ul className="nav-list">
                     <li className="nav-list-item">
-                        <Link to="/">Home</Link>
+                        <Link to="/">Listings</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/about">About</Link>
+                        <Link to="/Login">Login</Link>
                     </li>
-                    <li className="nav-list-item">
-                        <Link to="/dashboard">Dasboard</Link>
-                    </li>
+
+
                 </ul>
             </Toolbar>
         </AppBar>

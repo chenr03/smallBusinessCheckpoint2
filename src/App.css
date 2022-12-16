@@ -24,7 +24,7 @@ ul {
   margin: 50px 0;
 }
 
-.add-car {
+.add-listing {
   background: #4caf50 !important;
   color: white !important;
 }
@@ -42,7 +42,8 @@ ul {
 }
 
 .text-red {
-  color: red
+  color: green
+
 }
 
 .nav-list {
@@ -54,10 +55,27 @@ ul {
   margin: auto 20px;
 }
 
-.car-container {
+.listing-container {
   margin: 50px;
 }
 
-.car-paper {
+.listing-paper {
   padding: 50px;
+}
+
+.login {
+  margin-top: 100px;
+}
+
+/* Listing */
+.main-listings{
+  margin: 30px
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 50%;
+  gap: 15px;
 }

@@ -1,149 +1,88 @@
-export default {
+/* eslint-disable */
+const state =  {
     user: {
-        username: 'test-user-1',
-        email: 'test-user@example.com'
+        username: 'test1',
+        email: 'test-user@example.com',
+        // password: 'test1234!'
     },
-    cars: [
+
+    listings: [ // this is the data object
         {
-           "id": 1,
-           "name":"chevrolet chevelle malibu",
-           "mpg":18,
-           "cylinders":8,
-           "horsepower":130
+            "id": 1,
+            "name": 'Saint Louis Bread Company',
+            "description": '1',
+            "address": " 99 Grasso Plaza, St. Louis, MO 63123",
+            "hours": "6AM-9PM"
         },
+
         {
-           "id": 2,
-           "name":"buick skylark 320",
-           "mpg":15,
-           "cylinders":8,
-           "horsepower":165
+            "id": 2,
+            "name": `Schnuck's`,
+            "description": '1',
+            "address": "10070 Gravois Rd, St. Louis, MO 63123",
+            "hours": "6AM-10PM"
         },
+
         {
-           "id": 3,
-           "name":"plymouth satellite",
-           "mpg":18,
-           "cylinders":8,
-           "horsepower":150
+            "id": 3,
+            "name": '9 Mile Garden',
+            "description": '1',
+            "address": "9375 Gravois Rd, Affton, MO 63123",
+            "hours": "4PM-12AM"
         },
+
         {
-           "id": 4,
-           "name":"amc rebel sst",
-           "mpg":16,
-           "cylinders":8,
-           "horsepower":150
+            "id": 4,
+            "name": 'Club Fitness',
+            "description": '1',
+            "address": "10047 Gravois Rd, Affton, MO 63123",
+            "hours": "Open 24Hrs"
         },
+
         {
-           "id": 5,
-           "name":"ford torino",
-           "mpg":17,
-           "cylinders":8,
-           "horsepower":140
+            "id": 5,
+            "name": 'Courtesy Diner',
+            "description": '1',
+            "address": "8000 S Laclede Station Rd, St. Louis, MO 63123",
+            "hours": "Open 24Hrs"
         },
+
         {
-           "id": 6,
-           "name":"ford galaxie 500",
-           "mpg":15,
-           "cylinders":8,
-           "horsepower":198
+            "id": 6,
+            "name": `Sam's Steakhouse`,
+            "description": '1',
+            "address": "10205 Gravois Rd, St. Louis, MO 63123",
+            "hours": "5PM-10PM"
         },
+
         {
-           "id": 7,
-           "name":"chevrolet impala",
-           "mpg":14,
-           "cylinders":8,
-           "horsepower":220
+            "id": 7,
+            "name": `Syberg's`,
+            "description": '1',
+            "address": "7802 Gravois Rd, St. Louis, MO 63123",
+            "hours": "11AM-11PM"
         },
+
         {
-           "id": 8,
-           "name":"plymouth fury iii",
-           "mpg":14,
-           "cylinders":8,
-           "horsepower":215
+            "id": 8,
+            "name": 'Dominoes Pizza',
+            "description": '1',
+            "address": "8814 Gravois Rd, Affton, MO 63123",
+            "hours": "10:30AM-12PM"
         },
+
         {
-           "id": 9,
-           "name":"pontiac catalina",
-           "mpg":14,
-           "cylinders":8,
-           "horsepower":225
+            "id": 9,
+            "name": `Fred's South County Auto Repair`,
+            "description": '1',
+            "address": "9201 Gravois Rd, St. Louis, MO 63123",
+            "hours": "7AM-5PM"
         },
-        {
-           "id": 10,
-           "name":"amc ambassador dpl",
-           "mpg":15,
-           "cylinders":8,
-           "horsepower":190
-        },
-        {
-           "id": 11,
-           "name":"citroen ds-21 pallas",
-           "mpg": "unknown",
-           "cylinders":4,
-           "horsepower":115
-        },
-        {
-           "id": 12,
-           "name":"chevrolet chevelle concours (sw)",
-           "mpg": "unknown",
-           "cylinders":8,
-           "horsepower":165
-        },
-        {
-           "id": 13,
-           "name":"ford torino (sw)",
-           "mpg": "unknown",
-           "cylinders":8,
-           "horsepower":153
-        },
-        {
-           "id": 14,
-           "name":"plymouth satellite (sw)",
-           "mpg": "unknown",
-           "cylinders":8,
-           "horsepower":175
-        },
-        {
-           "id": 15,
-           "name":"amc rebel sst (sw)",
-           "mpg": "unknown",
-           "cylinders":8,
-           "horsepower":175
-        },
-        {
-           "id": 16,
-           "name":"dodge challenger se",
-           "mpg":15,
-           "cylinders":8,
-           "horsepower":170
-        },
-        {
-           "id": 17,
-           "name":"plymouth 'cuda 340",
-           "mpg":14,
-           "cylinders":8,
-           "horsepower":160
-        },
-        {
-           "id": 18,
-           "name":"ford mustang boss 302",
-           "mpg": "unknown",
-           "cylinders":8,
-           "horsepower":140
-        },
-        {
-           "id": 19,
-           "name":"chevrolet monte carlo",
-           "mpg":15,
-           "cylinders":8,
-           "horsepower":150
-        },
-        {
-           "id": 20,
-           "name":"buick estate wagon (sw)",
-           "mpg":14,
-           "cylinders":8,
-           "horsepower":225
-        }
-    ]
-  };
-  
+    ],
+
+    // googleMaps: [],
+
+
+};
+
+export default state;
