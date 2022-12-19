@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Container } from "@mui/material";
 
-const Login = () => {
+const Login = (props) => {
+    console.log('Props inside of Login Comp: ', props)
     const navigate = useNavigate();
 
     const [state, setState] = useState({
@@ -22,7 +23,7 @@ const Login = () => {
 
     const login = (e) => {
         e.preventDefault();
-
+        props.login();
         // SEND POST REQ TO SERVER FOR USER
 
         // set cookie here

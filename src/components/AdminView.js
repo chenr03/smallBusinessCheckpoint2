@@ -9,19 +9,17 @@ import {
     TableRow,
     Typography
 } from '@mui/material'
+import DeleteIcon from '@mui/icons-material/Delete'
 import {
     Link,
     useParams
 } from 'react-router-dom'
-import DeleteIcon from "@mui/icons-material/Delete";
 
 const Listings = (props) => {
     const {id} = useParams();
 
     const listing = props.listings.find((listing) => listing.id === +id);
     console.log(listing);
-    console.log('Currently online: ', props.online)
-
 
     return (
         <div className="main-listings">
@@ -33,13 +31,7 @@ const Listings = (props) => {
                             <TableCell>Description</TableCell>
                             <TableCell>Address</TableCell>
                             <TableCell>Hours</TableCell>
-                            {
-                                props.online && (
-                                    <TableCell>
-                                        Delete
-                                    </TableCell>
-                                )
-                            }
+                            <TableCell>Delete</TableCell>
 
                         </TableRow>
                     </TableHead>
@@ -61,16 +53,11 @@ const Listings = (props) => {
                                     <TableCell  scope="row">{listings["description"]}</TableCell>
                                     <TableCell  scope="row">{listings["address"]}</TableCell>
                                     <TableCell  scope="row">{listings["hours"]}</TableCell>
-                                    {
-                                        props.online && (
-                                            <TableCell>
-                                                <DeleteIcon
-                                                    // add onClick method here
-                                                    onClick={() => props.removeListing(listings.id)}
-                                                    className="icon text-red" />
-                                            </TableCell>
-                                        )
-                                    }
+                                    <DeleteIcon
+                                        // add onClick method here
+                                        onClick={() => props.removeListing(idx)}
+                                        className="icon text-red" />
+
                                 </TableRow>
                             )})}
                     </TableBody>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { Container} from '@mui/material';
-// import Map from '../maps'
+import Map from '../components/Map'
 
 const BizDetails = (props) => {
     let { id } = useParams();
@@ -14,7 +14,7 @@ const BizDetails = (props) => {
             <h2>{listing.address}</h2>
             <h2>{listing.hours}</h2>
             <p>{listing.description}</p>
-            {/*<Map />*/}
+            <Map name={listing.name} address={listing.address}/>
         </Container>
     )
 }

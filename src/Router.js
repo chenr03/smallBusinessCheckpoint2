@@ -1,9 +1,10 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Listing from './containers/Listing'
-import Login from './components/Login'
+import Login from './containers/Login'
 import BizDetails from './containers/BizDetails'
 import cookie from 'cookie'
+import AdminView from './components/AdminView'
 
 
 // checkAuth function below, which checks for cookies when someone is loggedin
@@ -22,9 +23,10 @@ const ProtectedRoute = (props) => {
 const Router = () => {
     return (
         <Routes>
-            <Route exact path="/" component={<Listing/>} />
+            <Route path="/" element={<Listing />} />
             <Route path="/login" element={<Login />}/>
             <Route path="/BizDetails/:id" element={<BizDetails />} />
+            <Route path="/AdminView" element={<ProtectedRoute component={AdminView} />} />
         </Routes>
     );
 };

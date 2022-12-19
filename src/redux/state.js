@@ -6,6 +6,8 @@ const state =  {
         // password: 'test1234!'
     },
 
+    online: false,
+
     listings: [ // this is the data object
         {
             "id": 1,
@@ -80,7 +82,6 @@ const state =  {
         },
     ],
 
-    // googleMaps: [],
 
 
 };
