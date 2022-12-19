@@ -12,7 +12,7 @@ const Login = (props) => {
     });
 
     const handleTextChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         setState((prevState) => {
             return {
                 ...prevState,
@@ -30,13 +30,22 @@ const Login = (props) => {
         document.cookie = "loggedin=true;max-age=60*1000";
         // set loggedIn = true and max-age = 60*1000 (one minute)
 
+
         navigate("/");
     };
+
+    // const logout = (e) => {
+    // e.preventDefault()
+    // props.logout()
+    //}
+
+    // need to set a logged out cookie here
+    //document.cookie = "loggedin=false
 
     return (
         <div className="App">
             <Container maxWidth="sm">
-                <form className="login-form" onSubmit={login}>
+                <form className="login-form" onSubmit={login} >
                     <TextField
                         required
                         onChange={handleTextChange}
@@ -46,7 +55,6 @@ const Login = (props) => {
                         type="text"
                     />
                     <TextField
-                        style={{color: 'green'}}
                         required
                         onChange={handleTextChange}
                         value={state.password}

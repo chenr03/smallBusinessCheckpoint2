@@ -51,6 +51,7 @@ class AddListing extends Component {
         return (
             <Fragment>
                 <div style={{ textAlign: 'center' }}>
+
                     <Button
                         variant="contained"
                         className="add-listing"
@@ -91,7 +92,7 @@ class AddListing extends Component {
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />
-                                <Button variant="contained" color="primary" type="submit">Submit</Button>
+                                <Button variant="contained" color="primary" background="green" type="submit">Submit</Button>
                             </form>
                         </DialogContent>
                     </Dialog>

@@ -79,3 +79,23 @@ ul {
   width: 50%;
   gap: 15px;
 }
+
+h1 {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #E1DFE1;
+}
+
+input {
+  background-color: white;
+}

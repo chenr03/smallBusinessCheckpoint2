@@ -9,8 +9,8 @@ const BizDetails = (props) => {
     const listing = props.listings.find(listing => listing.id === +id)
 
     return (
-        <Container maxWidth="sm" className="list-container">
-            <h1>{listing.name}</h1>
+        <Container maxWidth="sm" className="list-container" >
+            <h1>{listing.name} </h1>
             <h2>{listing.address}</h2>
             <h2>{listing.hours}</h2>
             <p>{listing.description}</p>
@@ -20,3 +20,4 @@ const BizDetails = (props) => {
 }
 
 export default BizDetails
+
