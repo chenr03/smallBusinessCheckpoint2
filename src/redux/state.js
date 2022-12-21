@@ -1,8 +1,8 @@
 /* eslint-disable */
 const state =  {
     user: {
-        username: 'test1',
-        email: 'test-user@example.com',
+        username: 'Test1',
+        email: 'ACA-Test@example.com',
         // password: 'test1234!'
     },
 
