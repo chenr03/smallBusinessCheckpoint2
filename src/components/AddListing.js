@@ -8,6 +8,7 @@ import {
 } from '@mui/material'
 import Map from './Map'
 
+
 class AddListing extends Component {
     state = {
         open: false,
@@ -59,8 +60,9 @@ class AddListing extends Component {
                         variant="contained"
                         className="add-listing"
                         onClick={this.toggleDialog}
+                        sx={{backgroundColor: 'green', marginBottom: '20px'}}
                     >
-                        Add Listing
+                        Add New Listing
                     </Button>
                 </div>
                 <div>
@@ -95,11 +97,14 @@ class AddListing extends Component {
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />
-                                <Button variant="contained" color="primary" type="submit">Submit</Button>
+                                <Button variant="contained" color="primary" type="submit" sx={{backgroundColor: 'green'}}>Submit</Button>
                             </form>
                         </DialogContent>
                         <Map name={this.state.name}
-                             address={this.state.address} />
+                             address={this.state.address}
+
+
+                        />
                     </Dialog>
                 </div>
             </Fragment>
