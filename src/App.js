@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './components/Navigation'
+import Navigation from './containers/Navigation'
 import './App.css'
 import Router from './Router'
 import { Provider } from 'react-redux'
@@ -9,11 +9,11 @@ function App() {
     return (
         <div className="App">
             <Provider store={store}>
-                <Navigation />
-                <Router />
+                <Navigation/>
+                <Router/>
+                }
             </Provider>
         </div>
     );
 }
-
 export default App;

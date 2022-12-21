@@ -14,6 +14,7 @@ import {
     useParams
 } from 'react-router-dom'
 import DeleteIcon from "@mui/icons-material/Delete";
+import AddListing from '../containers/AddListing'
 
 const Listings = (props) => {
     const {id} = useParams();
@@ -25,6 +26,12 @@ const Listings = (props) => {
 
     return (
         <div className="main-listings">
+            {props.online && (
+                <AddListing
+                    // listings = {props.listings}
+                />
+            )}
+
             <Container>
                 <Table>
                     <TableHead>

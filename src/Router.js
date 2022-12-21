@@ -5,6 +5,7 @@ import Login from './containers/Login'
 import BizDetails from './containers/BizDetails'
 import cookie from 'cookie'
 import AdminView from './components/AdminView'
+import AddListing from './containers/AddListing'
 
 
 // checkAuth function below, which checks for cookies when someone is loggedin
@@ -27,6 +28,7 @@ const Router = () => {
             <Route path="/login" element={<Login />}/>
             <Route path="/BizDetails/:id" element={<BizDetails />} />
             <Route path="/AdminView" element={<ProtectedRoute component={AdminView} />} />
+            <Route path="/AddListing" element={<ProtectedRoute component={AddListing} />} />
         </Routes>
     );
 };

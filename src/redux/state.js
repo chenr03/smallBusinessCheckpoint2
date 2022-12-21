@@ -15,8 +15,7 @@ const state =  {
             "description":
                 'Panera began in 1987 as St. Louis Bread Company, ' +
                 'a humble community bakery founded with a sourdough starter from San Francisco' +
-                'and a dream of putting a loaf of bread in every arm. ' +
-                'While our business has expanded well beyond St. Louis',
+                'and a dream of putting a loaf of bread in every arm. ' ,
             "address": " 99 Grasso Plaza, St. Louis, MO 63123",
             "hours": "6AM-9PM"
         },

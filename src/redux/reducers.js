@@ -4,6 +4,9 @@ const user = (state = null) => state
 
 const listings = (state = [], action) => {
     switch (action.type) {
+        case 'ADD_LISTING':
+            return [...state, action.value]
+
         case 'REMOVE_LISTING':
             const newListing = state.filter((listing) => {
                 return listing.id !== action.value
@@ -20,15 +23,17 @@ const online = (state = null, action) => {
         case 'LOGIN':
             console.log('State in reducer', state);
             return state = true
-        // case 'LOGOUT':
-        //     console.log('LoggedOut in reducer', state)
-        //     return state = false
+        case 'LOGOUT':
+            console.log('LoggedOut in reducer', state)
+            return state = false
         default:
             return state
 
     }
 
 }
+
+
 
 
 

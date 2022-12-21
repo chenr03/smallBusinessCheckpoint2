@@ -6,6 +6,7 @@ import {
     DialogContent,
     DialogTitle
 } from '@mui/material'
+import Map from './Map'
 
 class AddListing extends Component {
     state = {
@@ -25,10 +26,12 @@ class AddListing extends Component {
     }
 
     handleSubmit = (e) => {
+        console.log('this.state: ', this.state )
         e.preventDefault()
         const payload = { ...this.state }
-        payload.id = this.props.listingTotal + 1
+        payload.id = this.props.listings.length + 1
         delete payload.open
+        console.log('payload', payload)
         // console.log("THE Listing", payload)
         // add this.props.addCar function here
         // also add this.setState to close the dialog
@@ -63,7 +66,7 @@ class AddListing extends Component {
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
                         <DialogTitle>Add New Listing</DialogTitle>
-                        <DialogContent>
+                        <DialogContent sx={{display: 'flex', justifyContent: 'center'}}>
                             <form
                                 onSubmit={this.handleSubmit}
                                 style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
@@ -82,19 +85,21 @@ class AddListing extends Component {
                                 <TextField
                                     id="address"
                                     placeholder="Address"
-                                    value={this.state.cylinders}
+                                    value={this.state.address}
                                     onChange={this.handleTextChange}
                                     required />
                                 <TextField
                                     id="hours"
                                     placeholder="Hours"
-                                    value={this.state.horsepower}
+                                    value={this.state.hours}
                                     onChange={this.handleTextChange}
                                     required />
                                 <br />
-                                <Button variant="contained" color="primary" background="green" type="submit">Submit</Button>
+                                <Button variant="contained" color="primary" type="submit">Submit</Button>
                             </form>
                         </DialogContent>
+                        <Map name={this.state.name}
+                             address={this.state.address} />
                     </Dialog>
                 </div>
             </Fragment>

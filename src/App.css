@@ -92,6 +92,11 @@ h2 {
   justify-content: center;
 }
 
+/*p {*/
+/*  display: flex;*/
+/*  text-align: center;*/
+/*}*/
+
 body {
   background-color: #E1DFE1;
 }
@@ -99,3 +104,4 @@ body {
 input {
   background-color: white;
 }
+
